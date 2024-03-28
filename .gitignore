@@ -1,0 +1,9 @@
+# virtual environments
+.env
+env
+venv
+
+# local settings
+config/settings/local_settings.py
+
+db.sqlite3
