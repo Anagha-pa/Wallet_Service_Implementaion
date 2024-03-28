@@ -19,7 +19,7 @@ from django.urls import path,include
 from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('api/authenicate/', obtain_auth_token, name='obtain_token'),
     path('api/account/',include('apps.account.api.urls')),
     path('api/wallet/',include('apps.wallet.api.urls')),
